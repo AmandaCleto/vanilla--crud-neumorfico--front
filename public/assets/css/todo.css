@@ -1,0 +1,108 @@
+html, body {
+  all: unset;
+  background-color: #AAACE2;
+  font-family: 'Roboto', sans-serif; }
+
+h1 {
+  color: #816EA8;
+  margin: 20px 0 40px 0;
+  text-align: center; }
+
+main {
+  max-width: 700px;
+  height: 100%;
+  margin: 0 auto; }
+
+.container {
+  border-radius: 20px;
+  background: #AAACE2;
+  box-shadow: 5px 5px 10px #8a8bb7, -5px -5px 10px #cacdff;
+  height: 350px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.controllers {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+input {
+  all: unset;
+  border-radius: 20px;
+  height: 40px;
+  background: #AAACE2;
+  box-shadow: inset 5px 5px 10px #8a8bb7, inset -5px -5px 10px #cacdff;
+  width: 260px;
+  padding: 0px 20px;
+  color: #816EA8; }
+
+input::placeholder {
+  color: #816EA8; }
+
+.todos {
+  border-radius: 20px;
+  background: #AAACE2;
+  box-shadow: inset 5px 5px 10px #8a8bb7, inset -5px -5px 10px #cacdff;
+  height: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+  overflow-y: auto; }
+
+.todoList {
+  color: #816EA8;
+  margin: 0;
+  padding: 20px; }
+
+.todoList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+
+.todoList li div {
+  display: flex; }
+
+.todoList li div button:first-child, .todoList li div button:last-child {
+  position: relative; }
+
+.todoList li div button:last-child::before {
+  position: absolute;
+  content: url("data:image/svg+xml, %3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.73188 12C2.76938 12 2.80688 11.9963 2.84438 11.9906L5.99813 11.4375C6.03563 11.43 6.07125 11.4131 6.0975 11.385L14.0456 3.43687C14.063 3.41953 14.0768 3.39892 14.0862 3.37624C14.0956 3.35356 14.1005 3.32924 14.1005 3.30469C14.1005 3.28013 14.0956 3.25582 14.0862 3.23313C14.0768 3.21045 14.063 3.18985 14.0456 3.1725L10.9294 0.054375C10.8938 0.01875 10.8469 0 10.7963 0C10.7456 0 10.6988 0.01875 10.6631 0.054375L2.715 8.0025C2.68687 8.03063 2.67 8.06437 2.6625 8.10187L2.10938 11.2556C2.09113 11.3561 2.09765 11.4594 2.12836 11.5568C2.15907 11.6542 2.21305 11.7426 2.28562 11.8144C2.40937 11.9344 2.565 12 2.73188 12V12ZM3.99563 8.73L10.7963 1.93125L12.1706 3.30562L5.37 10.1044L3.70313 10.3987L3.99563 8.73V8.73ZM14.4 13.575H0.6C0.268125 13.575 0 13.8431 0 14.175V14.85C0 14.9325 0.0675 15 0.15 15H14.85C14.9325 15 15 14.9325 15 14.85V14.175C15 13.8431 14.7319 13.575 14.4 13.575Z' fill='%23726294'/%3E%3C/svg%3E"); }
+
+.todoList li div button:first-child::before {
+  position: absolute;
+  content: url("data:image/svg+xml, %3Csvg width='13' height='16' viewBox='0 0 13 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 5.96153C4.13261 5.96153 4.25979 6.01421 4.35355 6.10798C4.44732 6.20175 4.5 6.32892 4.5 6.46153V12.4615C4.5 12.5941 4.44732 12.7213 4.35355 12.8151C4.25979 12.9089 4.13261 12.9615 4 12.9615C3.86739 12.9615 3.74021 12.9089 3.64645 12.8151C3.55268 12.7213 3.5 12.5941 3.5 12.4615V6.46153C3.5 6.32892 3.55268 6.20175 3.64645 6.10798C3.74021 6.01421 3.86739 5.96153 4 5.96153V5.96153ZM6.5 5.96153C6.63261 5.96153 6.75979 6.01421 6.85355 6.10798C6.94732 6.20175 7 6.32892 7 6.46153V12.4615C7 12.5941 6.94732 12.7213 6.85355 12.8151C6.75979 12.9089 6.63261 12.9615 6.5 12.9615C6.36739 12.9615 6.24021 12.9089 6.14645 12.8151C6.05268 12.7213 6 12.5941 6 12.4615V6.46153C6 6.32892 6.05268 6.20175 6.14645 6.10798C6.24021 6.01421 6.36739 5.96153 6.5 5.96153V5.96153ZM9.5 6.46153C9.5 6.32892 9.44732 6.20175 9.35355 6.10798C9.25979 6.01421 9.13261 5.96153 9 5.96153C8.86739 5.96153 8.74021 6.01421 8.64645 6.10798C8.55268 6.20175 8.5 6.32892 8.5 6.46153V12.4615C8.5 12.5941 8.55268 12.7213 8.64645 12.8151C8.74021 12.9089 8.86739 12.9615 9 12.9615C9.13261 12.9615 9.25979 12.9089 9.35355 12.8151C9.44732 12.7213 9.5 12.5941 9.5 12.4615V6.46153Z' fill='%23726294'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13 3.46154C13 3.72676 12.8946 3.98111 12.7071 4.16865C12.5196 4.35618 12.2652 4.46154 12 4.46154H11.5V13.4615C11.5 13.992 11.2893 14.5007 10.9142 14.8758C10.5391 15.2508 10.0304 15.4615 9.5 15.4615H3.5C2.96957 15.4615 2.46086 15.2508 2.08579 14.8758C1.71071 14.5007 1.5 13.992 1.5 13.4615V4.46154H1C0.734784 4.46154 0.48043 4.35618 0.292893 4.16865C0.105357 3.98111 0 3.72676 0 3.46154V2.46154C0 2.19632 0.105357 1.94197 0.292893 1.75443C0.48043 1.5669 0.734784 1.46154 1 1.46154H4.5C4.5 1.19632 4.60536 0.94197 4.79289 0.754433C4.98043 0.566897 5.23478 0.46154 5.5 0.46154L7.5 0.46154C7.76522 0.46154 8.01957 0.566897 8.20711 0.754433C8.39464 0.94197 8.5 1.19632 8.5 1.46154H12C12.2652 1.46154 12.5196 1.5669 12.7071 1.75443C12.8946 1.94197 13 2.19632 13 2.46154V3.46154ZM2.618 4.46154L2.5 4.52054V13.4615C2.5 13.7268 2.60536 13.9811 2.79289 14.1686C2.98043 14.3562 3.23478 14.4615 3.5 14.4615H9.5C9.76522 14.4615 10.0196 14.3562 10.2071 14.1686C10.3946 13.9811 10.5 13.7268 10.5 13.4615V4.52054L10.382 4.46154H2.618ZM1 3.46154V2.46154H12V3.46154H1Z' fill='%23726294'/%3E%3C/svg%3E%0A"); }
+
+.todoList li div button:first-child, .todoList li div button:last-child {
+  all: unset;
+  border-radius: 35px;
+  background: #AAACE2;
+  box-shadow: 5px 5px 10px #8a8bb7, -5px -5px 10px #cacdff;
+  width: 30px;
+  height: 30px;
+  color: azure;
+  color: #816EA8;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 15px; }
+
+.addTodo {
+  all: unset;
+  border-radius: 35px;
+  background: #AAACE2;
+  box-shadow: 5px 5px 10px #8a8bb7, -5px -5px 10px #cacdff;
+  width: 80px;
+  height: 30px;
+  color: azure;
+  margin-left: 30px;
+  color: #816EA8;
+  text-align: center;
+  cursor: pointer; }
+
+.addTodo:hover, .todoList li div button:first-child:hover, .todoList li div button:last-child:hover {
+  background-color: #babbce; }

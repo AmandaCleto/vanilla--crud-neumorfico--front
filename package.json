@@ -1,0 +1,28 @@
+{
+  "name": "crud-neumorfico-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass src/assets/scss/todo.scss public/assets/css/todo.css -w",
+    "watch": "nodemon -e scss -x \"npm run build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmandaCleto/crud-neuromorfico-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmandaCleto/crud-neuromorfico-front/issues"
+  },
+  "homepage": "https://github.com/AmandaCleto/crud-neuromorfico-front#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {
+    "sass": "^1.37.5"
+  }
+}
