@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node-sass src/assets/scss/todo.scss public/assets/css/todo.css -w",
+    "build": "node src/utils/index.js && node-sass src/assets/scss/todo.scss public/assets/css/todo.css -w",
     "watch": "nodemon -e scss -x \"npm run build\""
   },
   "repository": {
@@ -24,5 +24,6 @@
   },
   "devDependencies": {
     "sass": "^1.37.5"
-  }
+  },
+  "keywords": []
 }
