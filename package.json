@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node src/utils/index.js && node-sass src/assets/scss/todo.scss public/assets/css/todo.css -w",
-    "watch": "nodemon -e scss -x \"npm run build\""
+    "build": "node src/utils/index.js && node-sass src/assets/scss/todo.scss public/assets/css/todo.css",
+    "start": "node-sass src/assets/scss/todo.scss public/assets/css/todo.css",
+    "watch": "nodemon -e scss -x \"npm run start\""
   },
   "repository": {
     "type": "git",

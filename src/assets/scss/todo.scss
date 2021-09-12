@@ -1,5 +1,6 @@
 @import './tokens/variables.scss';
 
+
 html, body {
     all: unset;
     background-color: #AAACE2;
@@ -7,9 +8,10 @@ html, body {
 }
 
 h1 {
-    color: $color-base-green;
+    color:red;
     margin: 20px 0 40px 0;
     text-align: center;
+    font-size: $sizes-40;
 }
 
 main {
